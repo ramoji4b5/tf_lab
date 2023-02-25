@@ -2,4 +2,10 @@
 *.terraform
 *.terraform.lock.hcl
 *.terraform.tfstate
+*.terraform.tfstate.backup
 *.infracost
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
