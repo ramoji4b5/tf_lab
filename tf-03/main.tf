@@ -13,7 +13,7 @@ provider "aws" {
 ##############(Optinal Backend)################
 terraform {
   backend "s3" {
-    bucket = "laksh-tf"
+    bucket = "lax-tf"
     key    = "dev/ramoji.tfstate"
     region = "us-east-1"
   }
