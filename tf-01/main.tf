@@ -17,6 +17,9 @@ resource "aws_s3_bucket" "b" {
     Name        = "tf_bucket_test"
     Environment = "Dev"
   }
+   versioning {
+    enabled = true
+  }
 }
 ############output#####################
 output "tf-ramoji-out" {
