@@ -1,0 +1,10 @@
+### Variable ##########
+variable "aws_access_key" {}
+variable "aws_secret_key" {}
+variable "region" {}
+variable "s3_bucket_name" {}
+#variable "no_of_bucket" {}
+variable "instance_type" {}
+variable "availability_zone" {}
+variable "emr_cluster_name" {}
+variable "cluster_size" {}
