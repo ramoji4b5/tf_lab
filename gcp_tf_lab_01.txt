@@ -1,1 +1,11 @@
 how to use the GCP with terraform exploring
+
+
+## Passing env file with varibale name as parameter
+terraform plan -var-file=./_env/dev/dev.tfvars 
+
+## To format the code in files
+ terraform fmt .
+
+## Passing arguments inline.
+$ terraform plan -var gcp_tf_bucket="ramoji" -var gcp_tf_region="EU" 

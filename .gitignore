@@ -9,3 +9,4 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
+tf_gcp/acount.json
