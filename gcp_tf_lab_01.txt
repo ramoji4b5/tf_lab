@@ -1,0 +1,1 @@
+how to use the GCP with terraform exploring
