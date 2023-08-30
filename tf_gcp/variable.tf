@@ -11,7 +11,7 @@ variable "gcp_tf_zone" {
 
 }
 
-variable "gcp_tf_region" {
+variable "gcp_tf_bucket_location" {
   default = "US"
 }
 

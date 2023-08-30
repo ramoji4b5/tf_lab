@@ -1,6 +1,6 @@
 resource "google_storage_bucket" "auto-expire" {
   name          = var.gcp_tf_bucket
-  location      = var.gcp_tf_region
+  location =  var.gcp_tf_bucket_location
   force_destroy = true
 
   ##public_access_prevention = "enforced"
@@ -8,12 +8,12 @@ resource "google_storage_bucket" "auto-expire" {
 
 resource "google_compute_address" "my_ip" {
   name   = "my-ip"
-  region = var.gcp_tf_region
+
 }
 
 resource "google_compute_instance" "default" {
   name         = "test"
-  machine_type = "e2-medium"
+  machine_type = "n1-standard-1"
   zone         = "us-central1-a"
 
   tags = ["foo", "bar"]
