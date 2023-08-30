@@ -1,6 +1,6 @@
 provider "google" {
   credentials = file("./acount.json")
-  project     = "acquired-sound-175002"
+  project     = "dsmltf"
   region      = "us-central1"
   zone        = "us-central1-c"
 }
