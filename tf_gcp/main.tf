@@ -1,13 +1,13 @@
 resource "google_storage_bucket" "auto-expire" {
   name          = var.gcp_tf_bucket
-  location =  var.gcp_tf_bucket_location
+  location      = var.gcp_tf_bucket_location
   force_destroy = true
 
   ##public_access_prevention = "enforced"
 }
 
 resource "google_compute_address" "my_ip" {
-  name   = "my-ip"
+  name = "my-ip"
 
 }
 
